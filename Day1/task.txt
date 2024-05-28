@@ -1,0 +1,52 @@
+1. Difference between HTTP 1.1 vs HTTP 2
+
+    Both of them are versions of the Hypertext Transfer Protocol (i.e. HTTP 2 is an improvement of HTTP 1.1). 
+
+    HTTP 1.1 vs HTTP 2.0:
+
+    HTTP 1.1 is an update of HTTP 1.0. It was introduced in 1999 and was used for many years all over the world. In 2015, HTTP 2.0 was introduced as an improvement to HTTP 1.1. There are some key comparisons between HTTP 1.1 and HTTP 2.0.
+
+
+    HTTP 1.1
+        a. A single request can block all the incoming requests, if it takes a long time to complete. This affects the performance. This is called Head of blocking
+
+        b. Headers are not compressed and this leads to larger payload sizes
+
+        c. Headers are sent as plain text, which can be quite large and can impact the performance
+
+        d. Allows data to be sent in chunks without knowing its size
+
+    HTTP 2.0
+        a. Allows sending multiple requests over a TCP connection simultaneously without blocking each other. This solves the Head of blocking problems in HTTP 1.1
+
+        b. Uses HPACK compression to reduce the size of the headers. This improves the efficiency
+
+        c. It uses binary framing layer instead of plain text format of HTTP/1.1, making parsing more efficient and less error-prone
+
+        d. Enables clients to prioritize streams, allowing more important resources to be delivered first.
+
+
+        HTTP 2.0 has efficient improvements than the HTTP 1.1 in terms of efficiency, performance and capabilities.Transitioning from HTTP/1.1 to HTTP/2 requires updates to web servers and clients, though most modern browsers and servers support both protocols.
+
+
+2. Write a blog about objects and its internal representation in Javascript
+
+    In Javascript, an object is a collection of keys and values, which is also known as properties. 
+    The key is a string and the value can be of any type including other objects, functions, arrays and data types. 
+    Objects are dynamic, you can add, modify or delete the properties during runtime
+
+    Program:
+    let person = {
+        name: “mushthaq ameen”,
+        age: 27,
+        func: function(){
+        console.log(“My name is” + this.name + “and my age is” + this.age)
+
+    }
+    }
+
+    name, age, func are the keys and the “mushthaq ameen”,27,function() is the value. As shown in the program the value can be of any type. First value is in string, next is a number and the next one is a function.
+
+    An object is created using a curly bracket
+
+    Nested objects can be created in this object

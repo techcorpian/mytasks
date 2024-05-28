@@ -1,0 +1,35 @@
+Difference between document and window objects:
+
+Window and document objects are essential components of browser DOM.
+
+Window Object:
+    1. Global scope: the window object represents the browser’s window or tab. It is the global object in a browser environment.
+
+    2. Properties and methods: the window provides properties and methods for managing the browser window
+
+        a. Location: window.location provides information about the current URL and allows redirection.
+
+        b. Alert/Prompt/Confirm: Methods like window.alert(), window.prompt(), and window.confirm() display dialogs.
+
+        c. Timers: Methods like setTimeout() and setInterval() for managing time-based events.
+
+        d. Document: The window.document property points to the document object of the currently loaded web page.
+
+        e. Size and Position: Methods like window.innerHeight, window.innerWidth, window.scrollTo() for window size and scroll position.
+
+    3. Events: The window object handles global events such as load, resize, scroll, and beforeunload.
+
+Document Object:
+    1. DOM Representation: The document object represents the HTML or XML document loaded in the window. It serves as the entry point to the web page's content.
+
+    2. Properties and Methods: The document object provides methods and properties for manipulating the content and structure of the web page:
+
+        a. Element Access: Methods like document.getElementById(), document.getElementsByClassName(), document.getElementsByTagName(), and document.querySelector().
+
+        b. Element Creation: Methods like document.createElement(), document.createTextNode().
+
+        c. Content Manipulation: Properties and methods like document.innerHTML, document.textContent, and document.appendChild().
+
+        d. Document Metadata: Access to metadata such as document.title, document.referrer, and document.cookie.
+
+    3. Events: The document object can handle events related to elements within the web page, such as clicks, form submissions, and DOMContentLoaded (which signals that the HTML has been fully loaded and parsed).
